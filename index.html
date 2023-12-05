@@ -27,6 +27,75 @@
   
   <style>
 
+.page-pop-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+        }
+
+        .page-pop-container.show {
+            display: flex;
+        }
+
+        .page-pop-content {
+            background: #d4af37; /* Metallic Golden Color */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            width: 100%;
+            color: #fff;
+        }
+
+        .page-pop-close-btn {
+            cursor: pointer;
+            font-size: 20px;
+            color: #fff;
+            float: right;
+        }
+
+        .page-pop-heading {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .page-pop-label {
+            display: block;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        .page-pop-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .page-pop-button {
+            width: 100%;
+            padding: 12px;
+            background-color: black;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .page-pop-button:hover {
+            background-color: black;
+        }
+
+
 .custom-sticky-button {
             position: fixed;
             bottom: 20px;
@@ -1087,6 +1156,41 @@
         alert('Form submitted!');
         closePopup();
     }
+</script>
+
+<div class="page-pop-container" id="popupForm">
+    <div class="page-pop-content">
+        <span class="page-pop-close-btn" onclick="closePopupForm()">&times;</span>
+        <h2 class="page-pop-heading">REGISTER YOUR INTEREST</h2>
+        <form>
+            <label class="page-pop-label" for="name">Name:</label>
+            <input class="page-pop-input" type="text" id="name" name="name" required>
+
+            <label class="page-pop-label" for="email">Email:</label>
+            <input class="page-pop-input" type="email" id="email" name="email" required>
+
+            <label class="page-pop-label" for="phone">Phone No.:</label>
+            <input class="page-pop-input" type="tel" id="phone" name="phone" required>
+
+            <button class="page-pop-button" type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function closePopupForm() {
+        document.getElementById('popupForm').classList.remove('show');
+    }
+
+    function submitForm() {
+        alert('Form submitted!');
+        closePopupForm();
+    }
+
+    // Add this function to make the popup appear on page load
+    window.onload = function() {
+        document.getElementById('popupForm').classList.add('show');
+    };
 </script>
 
 </body>
