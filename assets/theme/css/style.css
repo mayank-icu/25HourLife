@@ -963,3 +963,410 @@ blockquote {
 	top: 0;
 	left: -2400px;
 }
+
+/* Style Css */
+.footer-images {
+            display: flex;
+            justify-content: center; 
+            margin-bottom: 20px;
+        }
+
+        .footer-images img {
+            width: 5%; 
+            height: 5%; 
+            margin: 0 10px; 
+            border-radius: 0 !important; 
+        }
+
+        @media (max-width: 768px) {
+            .footer-images img {
+                width: 20%;
+                height: 20%;
+                margin: 0 5px;
+            }
+        }
+
+
+.icon-buttons {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-link {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-link i {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.faq {
+    background: linear-gradient(to right, #d4af37 0%, #ffd700 50%, #d4af37 100%); 
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+
+.faq .card {
+  border: none;
+  background: none;
+  
+}
+
+.faq .card .card-header {
+  padding: 0px;
+  border: none;
+  background: none;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.faq .card .card-header:hover {
+    background: rgba(233, 30, 99, 0.1);
+    padding-left: 10px;
+}
+.faq .card .card-header .faq-title {
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.faq .card .card-header .faq-title .badge {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 14px;
+  float: left;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  text-align: center;
+  background: black;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.faq .card .card-body {
+  padding: 30px;
+  padding-left: 35px;
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  line-height: 28px;
+  letter-spacing: 1px;
+  border-top: 1px solid black;
+}
+
+.faq .card .card-body p {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 991px) {
+  .faq {
+    margin-bottom: 30px;
+  }
+  .faq .card .card-header .faq-title {
+    line-height: 26px;
+    margin-top: 10px;
+  }
+}
+
+
+.simple-section {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: -150px;
+    }
+
+    /* First Element */
+    .element1 {
+      width: 50%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    /* Second Element */
+    .element2 {
+      width: 50%;
+      padding: 20px;
+      box-sizing: border-box;
+    
+    }
+
+    /* Responsive styling for mobile */
+    @media (max-width: 767px) {
+      .simple-section {
+        flex-direction: column;
+      }
+      .element1,
+      .element2 {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+
+
+    .page-pop-container {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.7);
+                align-items: center;
+                justify-content: center;
+                z-index: 10000;
+            }
+    
+            .page-pop-container.show {
+                display: flex;
+            }
+    
+            .page-pop-content {
+                background: white; /* Metallic Golden Color */
+                padding: 30px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                max-width: 400px;
+                width: 100%;
+                color: #fff;
+            }
+    
+            .page-pop-close-btn {
+                cursor: pointer;
+                font-size: 20px;
+                color: black;
+                float: right;
+            }
+    
+            .page-pop-heading {
+                color: black;
+                margin-bottom: 20px;
+            }
+    
+            .page-pop-label {
+                display: block;
+                margin-bottom: 8px;
+                color: black;
+            }
+    
+            .page-pop-input {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 16px;
+                border: 1px solid black;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+    
+            .page-pop-button {
+                width: 100%;
+                padding: 12px;
+                background-color: white;
+                color: black;
+                border: 2px solid black;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+    
+            .page-pop-button:hover {
+                background-color: black;
+                color: white;
+            }
+    
+    
+    .custom-sticky-button {
+                position: fixed;
+                bottom: 180px;
+                left: 20px;
+                background-color: #d4af37; /* Metallic Golden Color */
+                color: #fff;
+                padding: 10px;
+                border: none;
+                z-index: 10000;
+                border-radius: 4px;
+                cursor: pointer;
+                transform: rotate(-90deg);
+                transform-origin: bottom left;
+                margin-left: 15px;
+            }
+    
+            .custom-sticky-button:hover {
+                background-color: black; /* Darker shade on hover */
+            }
+    
+            .custom-icon {
+                transform: rotate(90deg);
+            }
+    
+    
+    
+    
+        @media (min-width: 1200px) {
+      .desktop-section {
+        display: block;
+        /* Add your styles here */
+      }
+    }
+    
+    @media (max-width: 1200px) {
+      .desktop-section {
+        display: none;
+      }
+    }
+    
+    @media (min-width: 768px) {
+      .mobile-section {
+        display: none;
+      }
+    }
+    
+    @media (max-width: 1200px) {
+      .mobile-section {
+        display: block;
+        /* Add your styles here */
+      }
+    }
+    
+    .center-br {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 40%;
+                margin-top: -15px;
+            }
+    
+    
+    
+            .custom-popup-container {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 10000;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.7);
+                align-items: center;
+                justify-content: center;
+            }
+    
+            .custom-popup-container.show {
+                display: flex;
+            }
+    
+            .custom-popup-content {
+                background: #fff;
+                padding: 30px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                max-width: 400px;
+                width: 100%;
+            }
+    
+            .custom-close-btn {
+                cursor: pointer;
+                font-size: 20px;
+                color: #333;
+                float: right;
+            }
+    
+            .custom-heading {
+                color: #333;
+                margin-bottom: 20px;
+                font-size: 25px;
+            }
+    
+            .custom-label {
+                display: block;
+                margin-bottom: 8px;
+                color: #555;
+            }
+    
+            .custom-input,
+            .custom-textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+    
+            .custom-button {
+                width: 100%;
+                padding: 12px;
+                background-color:#d4af37;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+    
+            .custom-button:hover {
+                background-color: #d4af37;
+            }
+
+
+            @media only screen and (max-width: 767px) {
+      .custom-sticky-footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #ac8400; /* Metallic golden color */
+        padding: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .custom-btn {
+        margin: 0;
+        padding: 10px;
+        font-size: 18px;
+        color: #fff; /* White text */
+        border: none;
+      }
+
+      .custom-btn i {
+        margin-right: 5px;
+      }
+
+      .custom-btn:not(:last-child) {
+        border-right: 1px solid #fff; /* Vertical separator */
+      }
+    }
